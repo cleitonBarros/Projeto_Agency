@@ -2,3 +2,62 @@
 @import 'utilities'
 
 @include reset    
+
+#mainBanner 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/office.jpg')
+    height: 85vh
+    background-size: cover
+    background-repeat: no
+    background-position: center
+
+    .nav-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: fixed
+        top: 0
+        left: 0 
+        width: 100%
+        padding: 1.5rem 2rem 
+        background-color: $black
+        z-index: 10
+
+        .brand
+            color: $light-color
+            font-size: 2rem
+            @include mainHover
+        
+        &-navbar
+            display: flex
+            align-items: center
+            height: 100%
+
+            li
+                margin: 5px 10px 
+
+                a
+                    color: $light-color
+                    @include mainHover
+
+        .fas.fa-bars
+            font-size: 2rem
+            color: #fff
+            display: none
+
+    .title-container
+        color: $light-color
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+
+        h2
+            font-size: 3rem
+            @extend  %title-text-shadow
+
+        h1
+            font-size: 4rem
+            margin-top: 1rem
+            @extend  %title-text-shadow
+
