@@ -3,22 +3,20 @@
 
 @include reset    
 
-html 
-  scroll-behavior: smooth
-
 #mainBanner 
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/office.jpg')
     height: 85vh
     background-size: cover
     background-repeat: no
     background-position: center
-
-    @include mobile
-        height: 100vh
-
-    @include tablet
-        display: 100vh
         
+    nav
+        @include mobile
+        display: none
+
+        @include tablet
+        display: none
+
     .nav-container
         display: flex
         justify-content: space-between
@@ -41,54 +39,29 @@ html
             color: $light-color
             font-size: 2rem
             @include mainHover
-            
-        nav
-            @include mobile
-                position: absolute
-                opacity: 0
-                visibility: hidden
-                left: 100%
-
-            @include tablet
-                position: absolute
-                opacity: 0
-                visibility: hidden
-                left: 100%
         
-        
-
         &-navbar
             display: flex
             align-items: center
-            justify-content: center
-            
+            height: 100%
 
             li
                 margin: 5px 10px 
-               
 
                 a
                     color: $light-color
-                    
                     @include mainHover
 
-                    
-
-
         .fas.fa-bars
-            cursor: pointer
             font-size: 2rem
             color: #fff
             display: none
 
-            &:hover
-                color: #dfdfdf
-
             @include mobile
                 display: block
 
             @include tablet
-                display: block
+            display: block
 
     .title-container
         color: $light-color
@@ -110,65 +83,6 @@ html
             font-size: 4rem
             margin-top: 1rem
             @extend  %title-text-shadow
-
-#mainBanner.open nav
-    overflow: hidden
-    
-    @include mobile
-        top: 65px
-        opacity: 1
-        visibility: visible
-        left: 0
-        display: flex
-        flex-direction: column
-        background: #fff
-        width: 100%
-        height: calc(100vh)
-        padding: 30px
-        border-top: 1px solid rgba(0,0,0,0.05)
-
-        .nav-container-navbar
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            
-
-            li
-                margin: 20px 10px 
-
-                a
-                    font-size: 1.5rem
-                    color: #000
-                    @include mainHover
-
-    @include tablet
-        top: 65px
-        opacity: 1
-        visibility: visible
-        left: 0
-        display: flex
-        flex-direction: column
-        background: #fff
-        width: 100%
-        height: calc(100vh)
-        padding: 30px
-        border-top: 1px solid rgba(0,0,0,0.05)
-
-        .nav-container-navbar
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            
-
-            li
-                margin: 20px 10px 
-
-                a
-                    font-size: 1.5rem
-                    color: #000
-                    @include mainHover
 
 .services-container
     text-align: center

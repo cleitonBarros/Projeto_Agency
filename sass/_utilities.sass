@@ -28,6 +28,13 @@
     @media (max-width: 550px)
         @content
 
+    @media (min-width: 550px) and (max-width: 815px)
+        @content
+
+@mixin tablet   
+    @media (min-width: 815px) and (max-width: 1090px)
+        @content
+
 
 // PLACEHOLDER SELECTORS
 %title-text-shadow
