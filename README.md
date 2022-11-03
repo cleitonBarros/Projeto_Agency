@@ -1,17 +1,17 @@
 
 <h1 align="center">
-  <img  src="./assets/img/logo.svg" width="420px" />
+  <img  src="./assets/logo.png" width="250px" />
 </h1>
 
 
 <h1 align="center">
-  <img  src="./assets/img/webpage.png" width="1024px" height="2200px"/>
+  <img  src="./assets/screenshotFull.png" width="1024px" height="2200px"/>
 </h1>
 
 
 ## 📱 Mobile 
 <h1 align="center">
-  <img  src="./assets/img/menu.png" width="450px" height="650px"/>
+  <img  src="./assets/mobile_menu.png" width="450px" height="650px"/>
 </h1>
 
 
@@ -20,15 +20,13 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
-- CSS
+- SASS
 - JavaScript
-- ScrollReveal
 
 ## 💻 Projeto
 
- DoctorCure é uma aplicação desenvolvida durante a nlwReturn da Rocketseat, 100% responsivo (320px, 760px, 1024px+ ), utilizando o conceito mobile frist.
- No modo mobile a barra nav desaparece e vira um botão abrindo um menu que vem de baixo para cima.                                                                 
+ Project Agency uma aplicação desenvolvida no curso de SASS, afim de estudar SASS/SCSS                                                         
                                                                    
 
 ## 🔖 Layout
-Você pode visualizar o projeto  através [desse link]( https://cleitonbarros.github.io/DoctorCare/).
+Você pode visualizar o projeto  através [desse link](https://projeto-agency.vercel.app/).
