@@ -13,3 +13,4 @@ for(const link of lista){
         header.classList.remove('open')
     })
 }
+Arrays.sort()
